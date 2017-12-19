@@ -25,6 +25,6 @@ composer require infw/web-socket
 [link-packagist]: https://packagist.org/packages/infw/web-socket
 [link-travis]: https://travis-ci.org/infw/web-socket
 [link-scrutinizer]: https://scrutinizer-ci.com/g/infw/web-socket/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/infw/web-socket
+[link-code-quality]: https://scrutinizer-ci.com/g/kpicaza/infw-web-socket/badges/quality-score.png?b=master
 [link-downloads]: https://packagist.org/packages/infw/web-socket
 [link-author]: https://github.com/kpicaza
