@@ -1,0 +1,8 @@
+parameters:
+	excludes_analyse:
+		- %rootDir%/../../../app/Exceptions/Handler*
+	ignoreErrors:
+#		- '#Call to an undefined static method Illuminate\\Support\\Facades\\[a-zA-Z0-9]+::[a-zA-Z0-9]+\(\).#'
+#		- '#Call to an undefined static method Tymon\\JWTAuth\\Facades\\[a-zA-Z0-9]+::[a-zA-Z0-9]+\(\).#'
+#		- '#Call to an undefined method Illuminate\\Contracts\\Validation\\Validator::errors\(\).#'
+#		- '#Method Illuminate\\Http\\Request::only\(\) invoked with [0-9]+ parameters, 1 required.#'

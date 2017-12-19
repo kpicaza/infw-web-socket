@@ -1,0 +1,59 @@
+{
+    "name": "infw/web-socket",
+    "type": "library",
+    "description": "Web socket server",
+    "keywords": [
+        "infw",
+        "web-socket"
+    ],
+    "homepage": "https://github.com/infw/web-socket",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kpicaza",
+            "email": "kpicaza@example.com",
+            "homepage": "https://github.com/kpicaza",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "cboden/ratchet": "^0.4.1",
+        "textalk/websocket": "^1.2"
+    },
+    "require-dev": {
+        "fetzi/phpspec-watcher": "^1.0",
+        "henrikbjorn/phpspec-code-coverage": "^3.0",
+        "memio/spec-gen": "^0.6.1",
+        "phpspec/phpspec": "^3.0",
+        "phpunit/phpunit": "^5.7.21",
+        "phpstan/phpstan": "^0.6.4",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "InFw\\WebSocket\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "InFw\\WebSocket\\": "tests"
+        }
+    },
+    "scripts": {
+        "watch-tests": "phpspec-watcher watch --ansi",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests --ansi",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests --ansi",
+        "spec-describe": "phpspec describe --ansi",
+        "spec-run": "phpspec run --format=pretty --ansi",
+        "inspect": "phpstan analyse -l 4 -c phpstan.neon src --ansi"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
