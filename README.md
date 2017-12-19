@@ -9,6 +9,12 @@
 
 Socket server and client pawered by ratchet.
 
+## Installation
+
+````
+composer require infw/web-socket
+````
+
 [ico-version]: https://img.shields.io/packagist/v/infw/web-socket.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/infw/web-socket/master.svg?style=flat-square
